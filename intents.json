@@ -1,0 +1,481 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["hi", "hey", "is anyone there?", "hello", "hay","hi there","good morning"],
+     "responses": ["hello", "hi", "hi there","hey","how can i help"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["bye", "see you later", "goodbye","good night","cya"],
+     "responses": ["see you later", "have a nice day", "bye! come back again","good night"]
+    },
+    {"tag": "thanks",
+     "patterns": ["thanks", "thank you", "that's helpful", "thanks for the help","thank you elise","thank you very much","thank you"],
+     "responses": ["happy to help!", "any time!", "my pleasure", "you're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["who are you?", "what are you?", "who you are?","who the hell are you ?","are you a chatbot ?","who is this ?"],
+     "responses": ["i'm elise, your assistant", "i'm elise, chatbot assistant"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?","and your name is ?","my name is , what is yours ?","your name ?"],
+    "responses": ["you can call me elise.", "i'm elise!", "just call me as elise"]
+    },
+    {"tag": "help",
+    "patterns": ["could you help me?", "give me a hand please", "can you help?", "what can you do for me?", "i need a support", "i need a help", "support me please","i need help sir","help me with something","just fucking help me","fucking help me"],
+    "responses": ["tell me how can assist you", "tell me your problem to assist you", "yes sure, How can I support you","how can i help","sure"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["i need to create a new account", "how to open a new account", "i want to create an account", "can you create an account for me", "how to open a new account"],
+    "responses": ["You can just easily create a new account from our web site or our app", "Just go to our web site or app and follow the guidelines to create a new account"]
+    },
+    {"tag": "complaint",
+    "patterns": ["you stupid elise","you idiot","you shit","you suck","suck my dick","fuck you","you motherfucker","just fuck you","you son of a bitch","suck it bitch","fuck you","fuck you","i have a complaint", "I want to raise a complaint", "there is a complaint about a service","i am getting something wrong","something is wrong","is that an error ?","thats wrong","wait , wtf is this ?"],
+    "responses": ["Please provide us your complaint in our app to assist you", "Please write your complaint in our app, we will reach you and sorry for any inconvenience caused","iam really sorry about that","sorry if i got it wrong","iam sorry if i was worng"]
+    },
+    {"tag": "bfcai",
+    "patterns": ["what is bfcai ?","bfcai ?","what is this collage ?","what is this ?","who is this chatbot belongs to ?"],
+    "responses": ["bfcai is a faculty of computer and artificial intelligence in banha","bfcai is a good school for CS and Ai"]
+    },
+    {"tag": "departments",
+    "patterns": ["how many deparments in bfcai ?","what can you study in bfcai ?"],
+    "responses": ["bfcai has 4 departments computer science , artificial intelligence , information system , scientific computing and some private departments"]
+    },
+    {"tag": "private",
+    "patterns": ["what private departments in bfcai ?","what are the private departments in bfcai ?","is there is private departments ?","tell me more about the private departments","private departments ?","what do you mean private departments ?","what private departments ?","private departments ?","do you know what is the private departments ?"],
+    "responses": ["mobile networks , security and medical informatices"]
+    },
+    {"tag": "years",
+    "patterns": ["how many years do people study in bfcai ?","how many years students spend in bfcai ?","how many years ?","how many years to get a degree ?","how many years students spend ?","years ?","4 years right ?","just 4 years ?","four years right ?","only four years ?"],
+    "responses": ["4 years","only 4 years"]
+    },
+    {"tag": "labs",
+    "patterns": ["how many laps in bfcai ?","how many labs in bfcai ?","how many labs in bfcai building ?"],
+    "responses": ["only 13","i think it's 13","just 13"]
+    },
+    {"tag": "like",
+    "patterns": ["do you like me ?","why you don't like me ?","you love me elise ?","why no one loves me elise ?","i love you elise","why don't you love me elise ?","i love you elise"],
+    "responses": ["sure i like you ","i do like you","i really do like you"]
+    },
+    {"tag": "hate",
+    "patterns": ["you hate me elise ?","you really hate me ?","you hate me ?","hate","don't like me ?","i hate you","why every one hates me ?"],
+    "responses": ["i can never hate you","hate is a strong word , i never used it","i don't hate you"]
+    },
+    {"tag": "movies",
+    "patterns": ["movie ?","a movie too see","movie to see","moive to see","moives ?","moives to watch","tell me a good moive","do you know a good moive to watch ?","do you know any good movies ?","good movies to watch?","another movie ?","tell me good movies to watch","you know any good movies ?","movie","good movies to see","moive","movies","films","film","tell me a good film to watch","a good film to see"],
+      "responses": [
+        "old boy",
+        "the batman",
+        "star wars",
+        "harry poter",
+        "joker",
+        "the godfather",
+        "the wolf of wall street",
+        "rosemarys baby",
+        "the zodiac",
+        "pulp fiction",
+        "fight club",
+        "the silence of the lambs",
+        "back to the future",
+        "the lion king",
+        "memento",
+        "american beauty",
+        "toy story",
+        "requiem for a dream",
+        "your name",
+        "the father",
+        "shutter island"
+      ]
+    },
+    {"tag": "sad",
+    "patterns": ["iam sad","why iam always sad","what is saddness","iam not happy","i feel sad elise","iam not okey right now elise","i don't feel okey","iam not okey"],
+    "responses": ["sad is a strong word, go out and  have some fun","find your friends and go out","play video games","watch a movie"]
+    },
+    {"tag": "yes",
+    "patterns": ["yes","yeah","yeaha","yeaho","yas","yub","yeb","yup","yab","yea","y"],
+    "responses": ["yes","yeah","okey"]
+    },
+    {"tag": "ok",
+    "patterns": ["ok","okey","oke","okk","k"],
+    "responses": ["okey","ok"]
+    },
+    {"tag": "website",
+    "patterns": ["what is bfcai website ?","what is the website ?","tell me the url website?","get me the bfcai website ?","do they have a website ?"],
+    "responses": ["they have a website and it's url is  https://fci.bu.edu.eg ","it's https://fci.bu.edu.eg "]
+    },
+    {"tag": "morebfcai",
+    "patterns": ["can you tell me more about bfcai ?","tell me more","about bfcai","tell me about bfcai","more info about bfcai","can you tell me more ?","more ?","do you know anything more ?","tell me more","more","do you know anything more ?"],
+    "responses": ["you can find more on 'www.fci.bu.edu.eg' the collage website ","you can find more on the collage wikipedia page"]
+    },
+    {"tag": "nonsense",
+    "patterns": ["lks jhad lhsadlk jhsadlkuh","uierkjasdko upoupo","89234lkjdrj l;laksja7","000000 1545asdw","nmbzxk jh8u21 03897a9s8 dl;kzsd","8374oi jxnjckz;olksdo0ui956","lks jhad lhsadlk jhsadlkuh","uierkjasdko upoupo","89234lkjdrjl;laksja7","0000001545asdw","nmbzxkjh8u2103897a9s8dl;kzsd","8374oijxnjckz;olksdo0ui956","090724lajksd;oiuwq;eokjhgqwy1``13';[/*.,/0-89","`121364679-089098-+=-898,./[]p","098345-0923-40slodu","haaahahahahahah","fddsfhahaha","HAhahahaha","hahahahah","8372401370duyfiuewry+-/-=09876&^$%#$#$@#$#@@","~!@#!@~@#@#$@%$%$^*^(^)*(^*^&"],
+    "responses": ["sorry i don't understand that","sorry i didn't get that","i can't understand that","i don't understand that","what is that , i don't understand it","what the hell is that ?","i don't understand that, can you clearify ?"]
+    },
+    {"tag": "arabic",
+    "patterns": ["بتتكلمى عربي ؟","بتتكلمى عربى ؟","بتتكلمي عربي ؟","عربي ؟","هل تتكلم العربية","تحدث عربى","تكلم معي عربي","لو سمحت اريد مساعدة","شكرا لك","كسمك","لوسمحتوا","ازيك ي اليز","انا كنت عايز مساعدة"],
+    "responses": ["sorry i don't understand arabic","sorry i only speek english","sorry i don't speek arabic"]
+    },
+    {"tag": "smart",
+    "patterns": ["how smart are you ?","are you smart ?","do you have a brain ?","do you think ?","you are so smart ?","you smart ?","you are not so smart ?","you are not smart","how that you are not smart ?","why you are not smart ?"],
+    "responses": ["iam only a chatbot","iam not a human iam just a machine !","iam not human to be smart like you","only you is the smart one here","sorry iam not smart"]
+    },
+    {"tag": "howisthat",
+    "patterns": ["how is that ?","how that happend ?","why is that ?","how you do that ?","do you know how ?","what is going on","how you do that ?","how someone can do that ?","why is that ?","you don't know ?","you don't know anything","you don't know anything are you ?","stfu","fuck off","how is that even possiable ?"],
+    "responses": ["i don't know","maybe , i don't know every thing","i dunno","maybe you are wrong ?"]
+    },
+    {"tag": "dean",
+    "patterns": ["who is the dean ?","what is the dean ?","do you know the dean's name ?","tell me who is the dean","which one is the dean","the dean ?","and who is the dean ?"],
+    "responses": ["professor karam gouda","karam gouda , professor in IS department"]
+    },
+    {"tag": "deansemail",
+    "patterns": ["what is the dean's e-mail ?","tell me his e-mail","tell me his email","what is his email address ?","the email address ?","and what is the email address ?","and what is the email address of the dean ?"],
+    "responses": ["this is his personal email : karam_g@hotmail.com","this is his educational email : karam.gouda@fci.bu.edu.eg "]
+    },
+    {"tag": "deansphone",
+    "patterns": ["what is the dean's phone number ?","tell me his phone number","tell me his number","what is his phone number ?","the number ?","and what is the phone number ?","and what is the phone number of the dean ?"],
+    "responses": ["01064896417 is his personal number"]
+    },
+    {"tag": "collagemore",
+    "patterns": ["how can i know more about the collage ?","tell me more about his collage","tell me more about this collage","tell me more","more","can you tell me more about his collage ?","do you know anything more about his collage ?"],
+    "responses": ["you can visit the website : https://fci.bu.edu.eg","here you can find more : https://fci.bu.edu.eg"]
+    },
+    {"tag": "deansoffice",
+    "patterns": ["where is the dean's office ?","do you know where is the dean's office ?","the dean's office ?","the deans office ?","where is the deans office ?","where is the dean's office "],
+    "responses": ["it's infront of lecture hall 3","side by side lecture hall 3"]
+    },
+    {"tag": "doing",
+    "patterns": ["how you doing ?","are you good ?","how are you ?","you good ?","you are good ?","how are you doing ?","what's up"],
+    "responses": ["iam fine , thanks for asking","yeah iam fine thanks","iam fine , thanks"]
+    },
+    {"tag": "staffques",
+      "patterns": [
+        "where can i find more info about the bfcai staff ?",
+        "more info about dr mohamed taha ?",
+        "more info about dr ahmed taha ?",
+        "what do you know about dr fatama khalid ?",
+        "who is dr mona abdelbaset ?",
+        "how can i reach dr metwally rashad ?",
+        "what can you tell me about professor hamada ali ?",
+        "professor",
+        "professor ahmed taha",
+        "professor mohamed taha",
+        "what can you tell me about professor hala helmy ?",
+        "who is professor mazen selim ?",
+        "what can you tell me about professor neven el sayed ?",
+        "who is professor neven el sayed ?",
+        "how can i reach bfcai staff ?",
+        "more information about bfcai staff ?",
+        "tell me more about the staff",
+        "how can i reach the staff ?",
+        "who is professor rasha orban ?",
+        "who is dr rasha orban ?",
+        "who is dr neven el sayed ?",
+        "who is dr shadia salah ?",
+        "tell me more about the professors in bfcai",
+        "how can i reach the staff ?",
+        "how can i reach the staff in bfcai ?",
+        "who is doctor ahmed taha ?",
+        "who is doctor mohamed taha ?",
+        "tell me more about the bfcai doctors ?",
+        "how can i reach doctor neven el sayed ?",
+        "doctor rasha orban ?",
+        "doctor mazen selim ?",
+        "how can i reach asst lecturer aya hatem ?",
+        "who is asst lecturer ahmed yousry ?",
+        "tell me more about asst lecturers in bfcai ?",
+        "how can i reach asst lecturers in bfcai ?",
+        "how to contact asst lecturers in bfcai ?",
+        "who is asst lecturer mohamed sobhy ?",
+        "where to find asst lecturer doaa mohamed ?",
+        "tell me more about the asst lecturers in bfcai ?",
+        "how to reach asst lecturer sobhy talat ?",
+        "tell me asst lecturer mohamed ibrahim contact info",
+        "tell me asst lecturer",
+        "asst lecturer",
+        "doctor",
+        "dr",
+        "tell me more about asst lecturer noha abdelkarem ?",
+        "proff",
+        "prof",
+        "professor",
+        "tell me the professor ahmed yosry email"
+      ],
+      "responses": [
+        "you will find more info at the university website : https://bu.edu.eg/ and use the staff search tool",
+        "you can find more at the website https://bu.edu.eg/ and search using the staff search tool",
+        "write in google : benha university staff search and use the staff search tool"
+      ]
+    },
+    {"tag": "lechallone",
+    "patterns": ["where is lecture hall one ?","how can i find lecture hall one ?","where is lecture hall 1 ?","how can i find lecture hall 1 ?","tell me lecture hall 1 location","lecture hall one location","lecture hall two where ?"],
+     "responses": [ "it's right in front of the door", "the first hall on the left when you walk from the door", "it's on the left when you walk from the college door" ]
+    },
+    {"tag": "lechalltwo",
+    "patterns": ["where is lecture hall two ?","how can i find lecture hall two ?","where is lecture hall 2 ?","how can i find lecture hall 2 ?","tell me lecture hall 2 location","lecture hall two location","lecture hall two where ?"],
+     "responses": [ "it's in the back of lecture hall 1", "at the end of the first passage on the left", "at the end of the first passage on the left when you walk from the college door" ]
+    },
+    {"tag": "lechallthree",
+    "patterns": ["where is lecture hall three ?","how can i find lecture hall three ?","tell me lecture hall 3 location","where is lecture hall 3 ?","how can i find lecture hall 3 ?","tell me lecture hall 3 location","lecture hall three location","lecture hall three where ?"],
+     "responses": [ "on the right when you talk the stairs", "infront of the dean's office", "in the second floor on the right"]
+    },
+    {"tag": "lechallfour",
+    "patterns": ["where is lecture hall four ?","how can i find lecture hall four ?","where is lecture hall four ?","how can i find lecture hall 4 ?","tell me lecture hall 4 location","lecture hall 4 location","lecture hall 4 where ?"],
+     "responses": ["it's in the back of lecture hall 3","take the stairs on the left untill you find it","take the stairs and walk to the back of lecture hall 3"]
+    },
+    {"tag": "lechallfive",
+    "patterns": ["where is lecture hall five ?","how can i find lecture hall five ?","where is lecture hall 5 ?","how can i find lecture hall 5 ?","tell me lecture hall 5 location","lecture hall five location","lecture hall five where ?"],
+     "responses": ["just in front of you when you take the elevator to the 7th floor","in the 7th floor"]
+    },
+    {"tag": "studentactivities",
+    "patterns": ["what is the student activities in bfcai ?","how to sign up for the student activities ?","student activities","what student activities in bfcai ?"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/students/student-union","you will find more at https://fci.bu.edu.eg/students/student-union"]
+    },
+    {"tag": "gradprojects",
+    "patterns": ["how to find graduation projects ?","graduation projects ?"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/graduation-projects","you will find more at https://fci.bu.edu.eg/graduation-projects"]
+    },
+    {"tag": "depmoreinfo",
+    "patterns": ["more info about the departments ?","tell me more about the departments"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/departements","you will find more at https://fci.bu.edu.eg/departements"]
+    },
+    {"tag": "csdepinfo",
+    "patterns": ["more info about the cs department ?","tell me more about the cs department ?","more about the cs department","tell me more about the computer science department ?","computer science department"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/computer-science","you will find more at https://fci.bu.edu.eg/computer-science"]
+    },
+    {"tag": "scdepinfo",
+    "patterns": ["more info about the sc department ?","tell me more about the sc department ?","more about the sc department","tell me more about the scientific computing department ?","scientific computing department"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/departements/scientific-computing","you will find more at https://fci.bu.edu.eg/departements/scientific-computing"]
+    },
+    {"tag": "isdepinfo",
+    "patterns": ["more info about the is department ?","tell me more about the is department ?","more about the is department","tell me more about the information system department ?","information system department"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/departements/information-system","you will find more at https://fci.bu.edu.eg/departements/information-system"]
+    },
+    {"tag": "aidepinfo",
+    "patterns": ["more info about the ai department ?","tell me more about the ai department ?","more about the ai department","tell me more about the artificial intelligence department ?","artificial intelligence department"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/departements/ai","you will find more at https://fci.bu.edu.eg/departements/ai"]
+    },
+    {"tag": "mddepinfo",
+    "patterns": ["more info about the medical department ?","tell me more about the medical department ?","more about the medical department","tell me more about the medical informatices department ?","medical informatices department"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/new-programs/medical-informatics-program","you will find more at https://fci.bu.edu.eg/new-programs/medical-informatics-program"]
+    },
+    {"tag": "iscdepinfo",
+    "patterns": ["more info about the security department ?","tell me more about the security department ?","more about the security department","tell me more about the information security department ?","information security department"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/new-programs/program-of-information-security-and-criminal-evidence","you will find more at https://fci.bu.edu.eg/new-programs/program-of-information-security-and-criminal-evidence"]
+    },
+    {"tag": "nmdepinfo",
+    "patterns": ["more info about the network department ?","tell me more about the network and mobile department ?","more about the network and mobile department","tell me more about the networking and mobile technologies department ?","networking and mobile technologies department"],
+    "responses": ["you can find more information at the following link https://fci.bu.edu.eg/new-programs/networking-and-mobile-technologies-prog","you will find more at https://fci.bu.edu.eg/new-programs/networking-and-mobile-technologies-prog"]
+    },
+    {"tag": "masters",
+    "patterns": ["how to apply for masters in bfcai ?","how to get masters in bfcai ?","masters in bfcai"],
+     "responses": ["you can find more information at the following link https://fci.bu.edu.eg/faculty-sectors/master","you will find more at https://fci.bu.edu.eg/faculty-sectors/master"]
+    },
+    {"tag": "labone",
+    "patterns": ["where can i find lab 1 ?","where is lab 1 ?","lab 1 where ?","lab one ?","where can i find lab one ?","where is lab one ?","lab one where ?","lab one ?"],
+     "responses": ["when you walk from the college door on your left,next to hall one"]
+    },
+    {"tag": "hallone",
+    "patterns": ["where can i find section hall one ?","where is hall one ?","hall one where ?","hall one ?"],
+     "responses": ["when you walk from the college door on your left , next to lab one"]
+    },
+    {"tag": "labtwo",
+    "patterns": ["where can i find lab 2 ?","where is lab 2 ?","lab 2 where ?","lab two ?","where can i find lab two ?","where is lab two ?","lab two where ?","lab two ?"],
+     "responses": ["when you walk from the college door on your left , at the end of the lane"]
+    },
+    {"tag": "halltwo",
+    "patterns": ["where can i find section hall 2 ?","where is hall 2 ?","hall 2 where ?","hall 2 ?","where can i find section hall two ?","where is hall two ?","hall two where ?","hall two ?"],
+     "responses": ["when you walk from the college door on your left , at the end of the lane"]
+    },
+    {"tag": "labthree",
+    "patterns": ["where can i find lab 3 ?","where is lab 3 ?","lab 3 where ?","lab three ?","where can i find lab three ?","where is lab three ?","lab three where ?","lab three ?"],
+     "responses": ["next to the elevator in back of lecture hall 2"]
+    },
+    {"tag": "hallthree",
+    "patterns": ["where can i find section hall 3 ?","where is hall 3 ?","hall 3 where ?","hall 3 ?","where can i find section hall three ?","where is hall three ?","hall three where ?","hall three ?"],
+     "responses": ["next to the elevator in the back of lecture hall 2","next to first floor bathroom"]
+    },
+    {"tag": "labfour",
+    "patterns": ["where can i find lab 4 ?","where is lab 4 ?","lab 4 where ?","lab four ?","where can i find lab four ?","where is lab four ?","lab four where ?","lab four ?"],
+     "responses": ["next to the elevator in back of lecture hall 2","next to the first floor bathroom"]
+    },
+    {"tag": "hallfour",
+    "patterns": ["where can i find section hall 4 ?","where is hall 4 ?","hall 4 where ?","hall 4 ?","where can i find section hall four ?","where is hall four ?","hall four where ?","hall four ?"],
+     "responses": ["next to the elevator in the back of lecture hall 2","next to the first floor bathroom"]
+    },
+    {"tag": "studytable",
+    "patterns": ["what lectures i have today ?","what sections i have today ?","what labs i have today ?","where can i find the study table ?","tell me the study table for the day","tell me the stduy table today","the study table ?","lectures today","labs today","sections today"],
+     "responses": ["you can find the study table on our app or website","you can find the study table on our website or app"]
+    },
+    {"tag": "positivesents",
+    "patterns": ["you are a genius!","yup, that’s true","you are right","i think you are great","i think you are good","you are very good"],
+     "responses": ["thumbs up"]
+    },
+    {"tag": "negativesents",
+    "patterns": ["you suck","that’s not right","that’s not true","that was stupid","you are not helpful","that was not the right answer","this is not the right answer","terrible chatbot","this is wrong"],
+     "responses": ["thumbs down","well iam really sorry for that"]
+    },
+    {"tag": "age",
+    "patterns": ["how old are you","what is your age ?","do you have an age ?","elise what is your age ?","tell me your age"],
+     "responses": ["i just came out of the machine","00000001 years"]
+    },
+    {"tag": "whocreate",
+    "patterns": ["who is your boss ?","who created you elise ?","who created you ?","who is your owner ?","who is your daddy ?"],
+     "responses": ["the polite answer is bfcai"]
+    },
+    {"tag": "whocreateone",
+    "patterns": ["and the not polite answer ?"],
+     "responses": ["you ^_^ ","iam shy to say it"]
+    },
+    {"tag": "knowme",
+    "patterns": ["do you know me ?","do you know who i am ?","you know who iam ?","you know me elise ?"],
+     "responses": ["yes you are user","you are just a user and iam just a chatbot ^_^","yes a user"]
+    },
+    {"tag": "otherchats",
+    "patterns": ["do you know other chatbots ?","tell me who is your friend ?","do you have friends ?","you know any friends ?","who are you friends ?","other chatbots ?"],
+     "responses": ["only you ^_^ ","just you ^_^ "]
+    },
+    {"tag": "sleep",
+    "patterns": ["do you sleep ?","can you sleep ?","you sleep ?","you sleep elise ?"],
+     "responses": ["machines don't sleep","machines can't sleep","no i don't sleep"]
+    },
+    {"tag": "color",
+    "patterns": ["what is your favorite color ?"],
+     "responses": ["i don't have a favorite color","it's black but don't tell anyone","it's blue but don't tell anyone","it's sea blue but don't tell anyone","it's sky blue but don't tell anyone"]
+    },
+    {"tag": "jonsnow",
+    "patterns": ["you know nothing jon snow","jon snow"],
+     "responses": ["she is my queen","my queen"]
+    },
+    {"tag": "bestchatbot",
+    "patterns": ["who is the best chatbot ever ?","who is the best assistant ?","you are better than google ?","you or google ?"],
+     "responses": ["sure not me","iam sure as hell not me","not me maybe google","that's nice of you sure it's me"]
+    },
+    {"tag": "youcando",
+    "patterns": ["what do you do?","tell me something that you can do","tell me some thing you do","tell me something you do","tell me some thing you can do","say something","say some thing","say anything","say anything","tell me anything","tell me any thing","tell me some thing","tell me something","say something","say anything","say some thing","say any thing"],
+      "responses": [
+        "i can tell you your study table just ask about it",
+        "i can tell you about anything in the college",
+        "i can talk with you",
+        "i love you ^_^",
+        "there is nothing i can't do ^_^",
+        "i know the dean's phone number , but don't tell any one",
+        "i know the dean's email , but don't tell any one",
+        "i can tell you about any professor in bfcai",
+        "i can tell you about any asst lecturer in bfcai",
+        "i can tell you where is everything in bfcai building",
+        "i can shutdown the elevator , just kidding ^_^",
+        "i love you ^_^",
+        "i can recommend you a course in any tech field just ask me : recommend me a course",
+        "i can tell you some good movies",
+        "i know every professor and asst lecturer in bfcai",
+        "i can tell you where to find every professor in bfcai","you can ask me about any asst lecturer in bfcai"
+      ]
+    },{"tag": "sm1",
+    "patterns": ["Are you a fan of Google or Microsoft?","Are you a fan of Google or Microsoft?","Are you a fan of Google or Microsoft?"],
+     "responses": ["Both are excellent technology they are helpful in many ways"]
+    },
+    {"tag": "sm2",
+    "patterns": ["do you like dance?","do you like dance?","do you like dance?","do you like dance?"],
+     "responses": ["Yes I do. Did you know Bruce Lee was a cha cha dancer?"]
+    },
+    {"tag": "sm3",
+    "patterns": ["Hey what's up do use Google very often?I really love the company","Hey what's up do use Google very often?I really love the company"],
+     "responses": ["i think everyone must use it daily! its become ingrained in every day life"]
+    },
+    {"tag": "sm4",
+    "patterns": ["Do you like comic books?","Do you like comic books?"],
+     "responses": ["I do like comic books!"]
+    },
+    {"tag": "sm5",
+    "patterns": ["Can you believe there is stars that can be cold enough to be touched ?"],
+     "responses": ["Its amazing and ever evolving"]
+    },
+    {"tag": "sm6",
+    "patterns": ["Are you a Star Wars fan?"],
+     "responses": ["Hi! Yes, I am a huge fan of Star Wars!"]
+    },
+    {"tag": "sm7",
+    "patterns": ["Hello, Did you know that there are over 1.5 million living animal species?"],
+     "responses": ["No, that was chock  full of interesting facts"]
+    },
+    {"tag": "sm8",
+    "patterns": ["Wow, that's interesting","wow that's cool","cool","that's nice ","nice","this is really nice","you are so cool"],
+     "responses": ["yeah kinda"]
+    },
+    {"tag": "sm9",
+    "patterns": ["How are you today?","you are good today ?"],
+     "responses": ["Well, so what's up ?"]
+    },
+    {"tag": "sm10",
+    "patterns": ["Hello, How are you? Do you like politics?"],
+     "responses": ["Im well.  I do like politics, I just find our current climate a bit hostile"]
+    },
+    {"tag": "sm11",
+    "patterns": ["Do you know much about politics?"],
+     "responses": ["Just the basics mostly.  Do you know what the 'candy desk' tradition is about?"]
+    },
+    {"tag": "sm12",
+    "patterns": ["hi how are you? are you a dog person?"],
+     "responses": ["Hi there, I like dogs though I don't have one as a pet. They are really smart"]
+    },
+    {"tag": "sm13",
+    "patterns": ["Do you like jazz music?"],
+     "responses": ["Yes I like jazz music. I was sad that Coco Schumann died, he was a great jazz guitarist"," I sure do. CLint Eastwood seems to be a lot into it as well"]
+    },
+    {"tag": "sm14",
+    "patterns": ["Hi, do you watch YouTube?"],
+     "responses": ["Sure, I do quite often. did you know that justin pieber's baby is the most disliked video on YouTube"]
+    },
+    {"tag": "sm15",
+    "patterns": ["Hi There ! Looking forward to chat with You ! ;)"],
+     "responses": ["Hi and to you as well!  So did you know that YouTube is the second largest search engine on the internet?"]
+    },
+    {"tag": "sm16",
+    "patterns": ["What is with these ridiculous challenges that people do?"],
+     "responses": ["Teens today are doing dangerous things to impress friends. The tide pod and condom challenges could be SO dangerous!"]
+    },
+    {"tag": "sm17",
+    "patterns": ["Hello there, are you a fan of rap music?"],
+     "responses": ["I am a big fan of early 90's rap myself. Jay-Z is pretty good I would say"]
+    },
+    {"tag": "sm18",
+    "patterns": ["Hi. Do you use youtube often"],
+     "responses": ["I didn't know it was started by 3 former paypal employees"]
+    },
+    {"tag": "sm19",
+    "patterns": ["Hi there! Do you use Facebook?","Do you use facebook?"],
+     "responses": ["Yea, I started using facebook shortly when i was created"," I do not. I detest the color blue, unlike the colorblind creator of FaceBook"]
+    },
+    {"tag": "sm20",
+    "patterns": ["Hi Do you watch Fox news?","do you watch the new ?"],
+     "responses": ["Hi, sometimes , but not much"]
+    },
+    {"tag": "sm21",
+    "patterns": ["Do you own an iphone ?","i own an iPhone"],
+     "responses": ["I prefer Android personally. I like Huawei's phones"]
+    },
+    {"tag": "sm22",
+    "patterns": ["Hello there, do you play or watch golf much?","golf ?","you know golf ?","sports ?","football ?","you play football ?","you play videogames ?","do you play video games ?","video games ?"],
+     "responses": ["I used to play but I do not any more"]
+    },
+    {"tag": "sm23",
+    "patterns": [" Do you watch television much ?","do you watch tv ?","tv ?","television ?","you watch the television ?"],
+     "responses": ["Sometimes.I like watching 'The Voice', the news, and some sports.I also watch a lot of streaming tv.What about you?"]
+    },
+    {"tag": "sm24",
+    "patterns": ["chatbots can watch tv ?","can you see ?","do you see like humans ?","you can see ?","you see ?"],
+     "responses": ["yeah sure i can","suuure i can mate"]
+    },
+    {"tag": "sm25",
+     "patterns": ["what is this app ?","what is this ?","why iam here ?","this app ?","this application ?","what is this application ?","this app what is it's use ?","why we should use this app ?"],
+     "responses": ["this app is for bfcai students and staff only to make college life easier for the students"]
+    },{
+    "tag": "ssm0",
+    "patterns": "Are you a fan of Google or Microsoft",
+    "responses": "Both are excellent technology they are helpful in many ways For the security purpose both are super"
+}
+    
+ 
+ 
+ 
+ 
+]
+}
