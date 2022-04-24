@@ -15,8 +15,16 @@ import random
 import pickle
 from flask import Flask, request, jsonify
 import spacy
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+from autocorrect import Speller
+
+spell = Speller(lang='en')
 
 app = Flask(__name__)
+
+model_name = 'sentence-transformers/bert-base-nli-mean-tokens'
+sim_model = SentenceTransformer(model_name)
 
 stop_words = stopwords.words('english')
 
@@ -25,7 +33,6 @@ dataset = pd.read_csv('udemy_tech.csv')
 model = keras.models.load_model('chat_model')
 
 nlp = spacy.load('en_core_web_md')
-
 
 with open('label_encoder.pickle', 'rb') as enc:
     lbl_encoder = pickle.load(enc)
@@ -156,25 +163,26 @@ for sim in sims:
 
 def reced(rec):
     re = ''
-    rec = nlp(rec)
+
     rec2chat = ['recommend me a course', 'can you recommend me a course',
                 'can you tell some course recommendations', "course recommendations", "course recommendations",
                 "recommend me a course", "will you recommend me a course", "recommend course",
-                "i need course recommendation","can you recommend courses","recommend courses","can you recommend courses","do you recommend courses"
-                ,"courses recommendations"]
+                "i need course recommendation", "can you recommend courses", "recommend courses",
+                "can you recommend courses", "do you recommend courses"
+        , "courses recommendations"]
+
+    sentences = sim_model.encode(rec2chat)
+    inp = sim_model.encode([rec])
 
 
-    sim_ratio = []
-    for rec2 in rec2chat:
-        sim_ratio.append(rec.similarity(nlp(rec2)))
+    sim_ratios = cosine_similarity(inp, sentences)
 
+    rec_ratio = np.max(sim_ratios)
 
-    rec_ratio = np.max(sim_ratio)
-
-    if rec_ratio > 0.93:
+    if rec_ratio > 0.90:
         course_field = request.json
         course_field = course_field["course_field"]
-        reced_courses = get_recommendations(course_field)
+        reced_courses = get_recommendations(spell(course_field))
         re = reced_courses
 
         return re
@@ -183,8 +191,9 @@ def reced(rec):
 
 
 def ret_ans(userinp):
-
     userinp = remove_punctuation(userinp)
+    userinp = userinp.lower()
+    userinp = userinp.strip()
 
     max_len = 25
 
@@ -218,7 +227,7 @@ def chat():
 
     question = userinp['question']
 
-    answer = ret_ans(question)
+    answer = ret_ans(spell(question))
 
     return jsonify(answer)
 
